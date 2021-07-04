@@ -45,7 +45,7 @@ function draw() {
   rectMode(CENTER);
   background('pink');
 
-  keyPressed(); 
+ // keyPressed(); 
 
   roofObject.display();
 
@@ -63,14 +63,14 @@ function draw() {
 
   textSize(20)
   text('press up arrow',100,100)
-  text('press down arrow',width-200,100)
+ // text('press down arrow',width-200,100)
  
 }
 
 function keyPressed(){
 	if(keyCode===UP_ARROW){
 	//	background('yellow')
-Matter.Body.applyForce(bob2.body,bob2.body.position,{x:-1,y:-1});
+Matter.Body.applyForce(bob2.body,bob2.body.position,{x:-50,y:-50});
 	}
 }
 
